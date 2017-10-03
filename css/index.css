@@ -1,0 +1,156 @@
+/* General */
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+/* Nav & Footer */
+
+nav {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    background: #1F334D;
+    z-index: 1;
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    letter-spacing: 1px;
+    -webkit-transition: background-color 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition:         background-color 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+nav a:hover {
+    color: #4890DD;
+}
+
+.current a {
+    background-color: #4890DD;
+}
+
+.current a:hover {
+    color: white;
+}
+
+#menu {
+    color: white;
+    display: none;
+    border: none;
+    background: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: #1F334D;
+}
+
+/* General for sections */
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1.5px;
+}
+
+/* Section Home */
+
+#home {
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:80px;
+    font-weight: bolder;
+    color: #DEDBE9;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-shadow: 2px 2px #FFFFFF;
+    min-height: 70%;
+}
+
+/* Section Portfolio */
+
+#portfolio {
+    background-color: rgba(180, 185, 182, 0.3);
+}
+
+#portfolio h2 {
+    color: #1F334D;
+}
+
+#slider {
+    margin-top: 30px;
+}
+
+#slider img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Section About */
+
+#about {
+    background-color: #4890DD;
+}
+
+#about h2 {
+    color: white;
+}
+
+#about p {
+    color: white;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: #1F334D;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav li {
+        display: block;
+        text-align: center;
+    }
+    
+    #menu {
+        display: block;
+    }
+
+    #home {
+        text-align: center;
+    }
+}
